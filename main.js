@@ -1,0 +1,43 @@
+const canvas = document.getElementById('stars');
+const ctx = canvas.getContext('2d');
+function reload() {
+    canvas.width = window.innerWidth;
+    canvas.height = document.body.scrollHeight;
+}
+function drawStars(count){
+    ctx.clearRect(0,0, canvas.width, canvas.height);
+    for(let i=0;i<count;i++){
+        let x = Math.random()*canvas.width;
+        let y = Math.random()*canvas.height;
+        let radius = Math.random()*1.2;
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI*2);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+    }
+}
+function initstar() {
+    reload()
+    drawStars(750);
+}
+window.addEventListener('resize', initstar())
+window.addEventListener('DOMContentLoaded', initstar())
+
+
+
+const navbar = document.querySelectorAll('.navbar__item');
+const sec = document.querySelectorAll('section[id]');
+
+function setActive() {
+    let scrollPos = window.scrollY + window.innerHeight / 2;
+
+    sec.forEach((sec, index) => {
+        if (scrollPos >= sec.offsetTop && scrollPos < sec.offsetTop + sec.offsetHeight) {
+            navbar.forEach(item => item.classList.remove('active'))
+            navbar[index].classList.add('active')
+        }
+    })
+};
+
+window.addEventListener('scroll', setActive);
+window.addEventListener('DOMContentLoaded', setActive);

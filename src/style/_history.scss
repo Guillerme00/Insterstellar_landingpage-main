@@ -1,0 +1,33 @@
+.space {
+    height: 1000px;
+}
+
+.history {
+    position: relative;
+    &__tittle {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        font-size: 3.5vw;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    &__list {
+        &__item {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-bottom: 48px;
+            &--img {
+                width: 960px;
+                border-radius: 16px;
+                margin-right: 72px;
+            }
+            &--text {
+                font-size: 2vw;
+                color: #fff;
+                width: 600px;
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.navbar {
+    z-index: 2;
+    top: 2.5%;
+    position: fixed;
+    font-size: 1.1vw;
+    display: flex;
+    background-color: rgba(22, 21, 21, 0.623);
+    padding: 8px 8px;
+    border-radius: 50px;
+    color: #fff;
+    margin-left: 37%;
+
+    &__item {
+        cursor: pointer;
+        padding: 16px;
+    }
+}
+
+.first {
+    padding-left: 16px;
+}
+.last {
+    padding-right: 16px;
+}
+
+.active {
+    color: #000;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.header {
+    font-family: "Bodoni", sans-serif;
+    &__img {
+        position: relative;
+        &--item {
+            width: 100%;
+            display: block;
+            height: auto;
+            position: relative;
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+            mask-repeat: no-repeat;
+            mask-size: cover;
+        }
+        &__tittle {
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 33%;
+            left: 58%;
+            &--item1 {
+                font-size: 4.5vw;
+                color: #fff;
+            }
+            &--item2 {
+                font-size: 1.538vw;
+                color: #fff;
+            }
+        }
+    }
+    margin-bottom: 250px;
+}

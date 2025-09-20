@@ -1,0 +1,40 @@
+@use '_header.scss';
+@use '_history.scss';
+@use '_characters.scss';
+
+@font-face {
+    font-family: "Bodoni";
+    src: url(../../src/fonts/OPTIBodoni-Antiqua.otf);
+}
+
+@font-face {
+    font-family: "Refinary-25" ;
+    src: url(../../src/fonts/refinery-25-medium.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #000;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    pointer-events: none;
+}
