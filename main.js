@@ -41,3 +41,22 @@ function setActive() {
 
 window.addEventListener('scroll', setActive);
 window.addEventListener('DOMContentLoaded', setActive);
+
+
+let characters = document.querySelectorAll(['[data-tab-character]']);
+let desc = document.querySelectorAll(['[data-tab-desc]'])
+
+characters.forEach((char) => {
+    char.addEventListener('click', () => {
+        characters.forEach(c => c.classList.remove('active--2'));
+        char.classList.add('active--2')
+        let target = char.getAttribute('data-tab-character');
+        desc.forEach(d => d.classList.add('hide'));
+        
+        let selected = document.querySelector(`[data-tab-desc="${target}"]`);
+        if (selected) {
+            selected.classList.remove('hide');
+        }
+    })
+    }
+);

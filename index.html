@@ -11,7 +11,7 @@
         <h3 onclick="location.href='#inicio'" data-tab-navbar="1" class="navbar__item active first">Inicio</h3>
         <h3 onclick="location.href='#sinopse'" data-tab-navbar="2" class="navbar__item">Sinopse</h3>
         <h3 onclick="location.href='#personagens'" data-tab-navbar="3" class="navbar__item">Personagens</h3>
-        <h3 data-tab-navbar="4" class="navbar__item last">Calculos</h3>
+        <h3 onclick="location.href='#math'" data-tab-navbar="4" class="navbar__item last">Matematica</h3>
     </section>
     <section id="inicio" class="header">
         <div class="header__img">
@@ -46,67 +46,70 @@
         <ul class="characters__list">
             <li class="characters__list__item">
                 <div class="characters__list__item__wrapper">
-                    <div class="characters__list__item__wrapper__div active--2">
+                    <div data-tab-character="one" class="characters__list__item__wrapper__div active--2">
                         <img class="characters__list__item__wrapper__div--icon" src="build/imagens/COOPER.png" alt="Joseph A. Cooper">
                         <h2 class="characters__list__item__wrapper__div--title">Joseph A. Cooper</h2>
                     </div>
-                    <div class="characters__list__item__wrapper__div">
-                        <img class="characters__list__item__wrapper__div--icon" src="build/imagens/COOPER.png" alt="Joseph A. Cooper">
-                        <h2 class="characters__list__item__wrapper__div--title">Joseph A. Cooper</h2>
+                    <div data-tab-character="two" class="characters__list__item__wrapper__div">
+                        <img class="characters__list__item__wrapper__div--icon" src="build/imagens/MURPH COOPER-2.jpg" alt="Murph Cooper">
+                        <h2 class="characters__list__item__wrapper__div--title">Murph Cooper</h2>
                     </div>
-                    <div class="characters__list__item__wrapper__div">
-                        <img class="characters__list__item__wrapper__div--icon" src="build/imagens/COOPER.png" alt="Joseph A. Cooper">
-                        <h2 class="characters__list__item__wrapper__div--title">Joseph A. Cooper</h2>
+                    <div data-tab-character="three" class="characters__list__item__wrapper__div">
+                        <img class="characters__list__item__wrapper__div--icon" src="build/imagens/TOMCOPPER-1.png" alt="Tom Cooper">
+                        <h2 class="characters__list__item__wrapper__div--title">Tom Cooper</h2>
                     </div>
-                    <div class="characters__list__item__wrapper__div">
-                        <img class="characters__list__item__wrapper__div--icon" src="build/imagens/COOPER.png" alt="Joseph A. Cooper">
-                        <h2 class="characters__list__item__wrapper__div--title">Joseph A. Cooper</h2>
+                    <div data-tab-character="four" class="characters__list__item__wrapper__div">
+                        <img class="characters__list__item__wrapper__div--icon" src="build/imagens/TARS-1.png" alt="T.A.R.S">
+                        <h2 class="characters__list__item__wrapper__div--title">T.A.R.S</h2>
                     </div>
-                    <div class="characters__list__item__wrapper__div">
-                        <img class="characters__list__item__wrapper__div--icon" src="build/imagens/COOPER.png" alt="Joseph A. Cooper">
-                        <h2 class="characters__list__item__wrapper__div--title">Joseph A. Cooper</h2>
+                    <div data-tab-character="five" class="characters__list__item__wrapper__div">
+                        <img class="characters__list__item__wrapper__div--icon" src="build/imagens/AMELIABRAND-1.png" alt="Amelia Brand">
+                        <h2 class="characters__list__item__wrapper__div--title">Amelia Brand</h2>
                     </div>
-                    <div class="characters__list__item__wrapper__div">
-                        <img class="characters__list__item__wrapper__div--icon" src="build/imagens/COOPER.png" alt="Joseph A. Cooper">
-                        <h2 class="characters__list__item__wrapper__div--title">Joseph A. Cooper</h2>
+                    <div data-tab-character="six" class="characters__list__item__wrapper__div">
+                        <img class="characters__list__item__wrapper__div--icon" src="build/imagens/PROF.BRAND-1.png" alt="Professor Brand">
+                        <h2 class="characters__list__item__wrapper__div--title">Professor Brand</h2>
                     </div>
-                    <div class="characters__list__item__wrapper__div">
-                        <img class="characters__list__item__wrapper__div--icon" src="build/imagens/COOPER.png" alt="Joseph A. Cooper">
-                        <h2 class="characters__list__item__wrapper__div--title">Joseph A. Cooper</h2>
+                    <div data-tab-character="seven" class="characters__list__item__wrapper__div">
+                        <img class="characters__list__item__wrapper__div--icon" src="build/imagens/DRMANN-1.png" alt="Dr. Mann">
+                        <h2 class="characters__list__item__wrapper__div--title">Dr. Mann</h2>
                     </div>
                 </div>
                 <div class="characters__list__item__desc">
-                    <div class="characters__list__item__desc__div hide">
+                    <div data-tab-desc="one" class="characters__list__item__desc__div">
                         <span class="characters__list__item__desc__div--desc">Um piloto visionário e pai devotado, dividido entre o chamado para salvar a humanidade e o desejo de proteger seus filhos. Sua coragem o conduz além das estrelas, mas seu coração nunca deixa a Terra.</span>
                         <img class="characters__list__item__desc__div--img" src="build/imagens/COOPER-2.jpg" alt="Joseph A. Cooper">
                     </div>
-                    <div class="characters__list__item__desc__div hide">
-                        <span class="characters__list__item__desc__div--desc">Um piloto visionário e pai devotado, dividido entre o chamado para salvar a humanidade e o desejo de proteger seus filhos. Sua coragem o conduz além das estrelas, mas seu coração nunca deixa a Terra.</span>
-                        <img class="characters__list__item__desc__div--img" src="build/imagens/COOPER-2.jpg" alt="Joseph A. Cooper">
+                    <div data-tab-desc="two" class="characters__list__item__desc__div hide">
+                        <span class="characters__list__item__desc__div--desc">Brilhante e teimosa, Murph carrega tanto a dor da ausência do pai quanto a chama da ciência. É através dela que a ponte entre gerações se mantém, transformando emoção em descoberta.</span>
+                        <img class="characters__list__item__desc__div--img" src="build/imagens/MURPH COOPER-1.jpg" alt="Murph Cooper">
                     </div>
-                    <div class="characters__list__item__desc__div hide">
-                        <span class="characters__list__item__desc__div--desc">Um piloto visionário e pai devotado, dividido entre o chamado para salvar a humanidade e o desejo de proteger seus filhos. Sua coragem o conduz além das estrelas, mas seu coração nunca deixa a Terra.</span>
-                        <img class="characters__list__item__desc__div--img" src="build/imagens/COOPER-2.jpg" alt="Joseph A. Cooper">
+                    <div data-tab-desc="three" class="characters__list__item__desc__div hide">
+                        <span class="characters__list__item__desc__div--desc">Filho mais velho de Cooper, que tenta sustentar a fazenda da família em um planeta condenado. Seu apego à Terra simboliza o peso da tradição diante do colapso inevitável.</span>
+                        <img class="characters__list__item__desc__div--img" src="build/imagens/TOMCOPPER-2.png" alt="Tom Cooper">
                     </div>
-                    <div class="characters__list__item__desc__div hide">
-                        <span class="characters__list__item__desc__div--desc">Um piloto visionário e pai devotado, dividido entre o chamado para salvar a humanidade e o desejo de proteger seus filhos. Sua coragem o conduz além das estrelas, mas seu coração nunca deixa a Terra.</span>
-                        <img class="characters__list__item__desc__div--img" src="build/imagens/COOPER-2.jpg" alt="Joseph A. Cooper">
+                    <div data-tab-desc="four" class="characters__list__item__desc__div hide">
+                        <span class="characters__list__item__desc__div--desc">Um robô com humor peculiar e lealdade inabalável. Sua lógica fria contrasta com a humanidade que, ironicamente, revela em momentos decisivos.</span>
+                        <img class="characters__list__item__desc__div--img" src="build/imagens/TARS-2.png" alt="T.A.R.S">
                     </div>
-                    <div class="characters__list__item__desc__div hide">
-                        <span class="characters__list__item__desc__div--desc">Um piloto visionário e pai devotado, dividido entre o chamado para salvar a humanidade e o desejo de proteger seus filhos. Sua coragem o conduz além das estrelas, mas seu coração nunca deixa a Terra.</span>
-                        <img class="characters__list__item__desc__div--img" src="build/imagens/COOPER-2.jpg" alt="Joseph A. Cooper">
+                    <div data-tab-desc="five" class="characters__list__item__desc__div hide">
+                        <span class="characters__list__item__desc__div--desc">Astrofísica e exploradora, movida por ciência e por sentimentos que desafiam o espaço-tempo. Para ela, o amor pode ser tão mensurável quanto a gravidade.</span>
+                        <img class="characters__list__item__desc__div--img" src="build/imagens/AMELIABRAND-2.png" alt="Amelia Brand">
                     </div>
-                    <div class="characters__list__item__desc__div hide">
-                        <span class="characters__list__item__desc__div--desc">Um piloto visionário e pai devotado, dividido entre o chamado para salvar a humanidade e o desejo de proteger seus filhos. Sua coragem o conduz além das estrelas, mas seu coração nunca deixa a Terra.</span>
-                        <img class="characters__list__item__desc__div--img" src="build/imagens/COOPER-2.jpg" alt="Joseph A. Cooper">
+                    <div data-tab-desc="six" class="characters__list__item__desc__div hide">
+                        <span class="characters__list__item__desc__div--desc">Mentor de Amelia e figura intelectual da missão. Carrega consigo a esperança da humanidade, mas também um segredo capaz de mudar o destino de todos.</span>
+                        <img class="characters__list__item__desc__div--img" src="build/imagens/PROF.BRAND-2.png" alt="Professor Brand">
                     </div>
-                    <div class="characters__list__item__desc__div hide">
-                        <span class="characters__list__item__desc__div--desc">Um piloto visionário e pai devotado, dividido entre o chamado para salvar a humanidade e o desejo de proteger seus filhos. Sua coragem o conduz além das estrelas, mas seu coração nunca deixa a Terra.</span>
-                        <img class="characters__list__item__desc__div--img" src="build/imagens/COOPER-2.jpg" alt="Joseph A. Cooper">
+                    <div data-tab-desc="seven" class="characters__list__item__desc__div hide">
+                        <span class="characters__list__item__desc__div--desc">O herói falso. Cientista respeitado que, diante da solidão e do medo, expõe a fragilidade humana. Sua traição mostra que o maior perigo pode não estar nas estrelas, mas dentro de nós mesmos.</span>
+                        <img class="characters__list__item__desc__div--img" src="build/imagens/DRMANN-2.png" alt="Dr. Mann">
                     </div>
                 </div>
             </li>
         </ul>
+    </section>
+    <section id="math" class="math">
+            <h1 class="math__title">A beleza da Matematica</h1>
     </section>
 </body>
 <script src="main.js"></script>
