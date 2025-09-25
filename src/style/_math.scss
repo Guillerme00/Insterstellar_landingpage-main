@@ -1,7 +1,20 @@
-.math {
+.about {
     z-index: 10;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     &__title {
         font-size: 100px;
+        margin-bottom: 96px;
         }
+}
+
+.final {
+    font-size: 27px;
+}
+
+.final-2 {
+    font-size: 28px;
 }
