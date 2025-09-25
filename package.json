@@ -2,11 +2,20 @@
   "name": "interstelar_landingpage",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/Guillerme00/Insterstellar_landingpage-main#readme",
+  "bugs": {
+    "url": "https://github.com/Guillerme00/Insterstellar_landingpage-main/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guillerme00/Insterstellar_landingpage-main.git"
+  },
   "license": "ISC",
   "author": "",
   "type": "module",
   "main": "main.js",
   "scripts": {
+    "gulp": "gulp",
     "dev": "gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -322,8 +331,8 @@
     "stream-exhaust": "^1.0.2",
     "streamx": "^2.22.1",
     "strict-uri-encode": "^1.1.0",
-    "string-width": "^4.2.3",
     "string_decoder": "^1.3.0",
+    "string-width": "^4.2.3",
     "strip-ansi": "^6.0.1",
     "strip-dirs": "^2.1.0",
     "strip-eof": "^1.0.0",
@@ -385,6 +394,6 @@
     "gulp": "^5.0.1",
     "gulp-imagemin": "^9.1.0",
     "gulp-sass": "^6.0.1",
-    "sass": "^1.92.1"
+    "sass": "^1.93.2"
   }
 }
