@@ -1,7 +1,6 @@
 import gulp from 'gulp';
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
-import imageMin from 'gulp-imagemin';
 
 const sass = gulpSass(dartSass);
 
@@ -11,14 +10,8 @@ function style() {
     .pipe(gulp.dest('./build/dist'));
 }
 
-function minMage() {
-  return gulp.src('./src/images/**/*')
-    .pipe(imageMin())
-    .pipe(gulp.dest('./build/dist/imagens'));
-}
-
-export default gulp.parallel(style, minMage);
+export default style;
 
 export function watch() {
-  gulp.watch('./src/style/*.scss', gulp.parallel(style));
+  gulp.watch('./src/style/*.scss', style);
 }
